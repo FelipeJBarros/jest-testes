@@ -35,7 +35,7 @@ const ArticlePreview = (props) => {
         <ul className="tag-list">
           {article.tagList.map((tag) => {
             return (
-              <li className="tag-default tag-pill tag-outline" key={tag}>
+              <li role="listitem" className="tag-default tag-pill tag-outline" key={tag}>
                 {tag}
               </li>
             );
