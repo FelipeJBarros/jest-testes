@@ -39,3 +39,11 @@ const ListPagination = (props) => {
 };
 
 export default ListPagination;
+
+/*
+1 - não deve renderizar com menos de 10 artigos
+2 - deve criar um novo item para todo multiplo de 10
+3 - deve mudar o valor de currentPage todo vida que clicar em um item
+4 - um item deve conter a class active ao ser clicado
+5 - ao clicar em outro item, o item selecionado deve perder a classe active
+*/

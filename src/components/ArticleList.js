@@ -27,3 +27,10 @@ const ArticleList = (props) => {
 };
 
 export default ArticleList;
+
+/*
+1 - Deve exibir um aviso de loading caso ainda não tenha recebido a lista de artigos
+2 - Deve exibir um aviso caso a lista de artigos esteja vazia
+3 - Deve exibir um preview para cada artigo presente na lista
+4 - 
+*/

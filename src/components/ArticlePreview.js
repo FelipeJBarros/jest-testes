@@ -46,3 +46,14 @@ const ArticlePreview = (props) => {
 };
 
 export default ArticlePreview;
+
+/*
+1 - Deve exibir as informações do autor do artigo
+2 - Deve exibir o botão com o número de vezes que o artigo foi favoritado
+3 - Dece exibir as informações do artigo (Titulo e descrição)
+4 - Deve exivir um botão de acesso a página do artigo
+5 - Deve exibir as tags do artigo, caso existem
+
+-- Pode substituir algum -- 
+6 - Deve exibir um tag list vazio caso não existam tags
+*/
