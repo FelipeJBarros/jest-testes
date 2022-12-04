@@ -5,8 +5,8 @@ afterEach(cleanup);
 
 describe("ListPagination component", () => {
   it("Should not render if number of articles is less than 10", () => {
-    render(<ListPagination articlesCount={9} />);
-
+    const comp = render(<ListPagination articlesCount={9} />);
+    expect(comp.container).toBeEmptyDOMElement()
     
   });
 
