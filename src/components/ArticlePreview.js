@@ -4,7 +4,7 @@ const ArticlePreview = (props) => {
   const article = props.article;
 
   return (
-    <div className="article-preview">
+    <div className="article-preview" data-testid="article-preview">
       <div className="article-meta">
         <a href={`@${article.author.username}`}>
           <img src={article.author.image} alt={article.author.username} />
