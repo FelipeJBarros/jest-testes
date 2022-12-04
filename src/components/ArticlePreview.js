@@ -33,6 +33,7 @@ const ArticlePreview = (props) => {
         <p>{article.description}</p>
         <span>Read more...</span>
         <ul className="tag-list">
+          {/* para cada item no array tagList sera criada um li que representa uma tag */}
           {article.tagList.map((tag) => {
             return (
               <li role="listitem" className="tag-default tag-pill tag-outline" key={tag}>

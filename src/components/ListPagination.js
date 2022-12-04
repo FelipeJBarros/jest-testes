@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ListPagination = (props) => {
+  //se articlesCount for menor ou igual a 10 será o valor null será retornado
   if (props.articlesCount <= 10) {
     return null;
   }
 
   const range = [];
+  //para cada multiplo de 10 será adiocionado um item em ordem crescente no array range, começando por 1
   for (let i = 0; i < Math.ceil(props.articlesCount / 10); ++i) {
     range.push(i);
   }
+ const [page, setPage] = useState('');
 
-  const setPage = (page) => props.onSetPage(page);
 
   return (
     <nav>
       <ul className="pagination">
+        {/* para cada item do array range será criado um li que representa sua respectiva pagina */}
         {range.map((v) => {
           const isCurrent = v === props.currentPage;
           const onClick = (ev) => {
@@ -26,8 +29,9 @@ const ListPagination = (props) => {
               className={isCurrent ? "page-item active" : "page-item"}
               onClick={onClick}
               key={v.toString()}
+              role="listitem"
             >
-              <a className="page-link" href="">
+              <a className="page-link" href=""> 
                 {v + 1}
               </a>
             </li>
